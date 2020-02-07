@@ -251,6 +251,22 @@
           null
         ]
       },
+      "/Users/alerrian/Turing/2module/evals/friday_challenges/make_it_work/spec/models/challenge_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/alerrian/Turing/2module/evals/friday_challenges/make_it_work/app/models/challenge.rb": {
         "lines": [
           1,
@@ -353,6 +369,6 @@
         ]
       }
     },
-    "timestamp": 1581092505
+    "timestamp": 1581093347
   }
 }
