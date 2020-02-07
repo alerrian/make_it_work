@@ -18,12 +18,19 @@ RSpec.describe 'As a visitor', type: :feature do
       project_budget: 1000
     )
 
+    @project = Project.create!(
+      name: "Litfit",
+      material: "Lamp",
+      challenge_id: @furniture_challenge.id
+    )
+
     @contestant1 = Contestant.create!(
       name: 'Steve',
       age: 32,
       hometown: 'Colorado Springs',
       years_of_experience: 5
     )
+
     @contestant2 = Contestant.create!(
       name: 'Cass',
       age: 30,
@@ -31,10 +38,9 @@ RSpec.describe 'As a visitor', type: :feature do
       years_of_experience: 10
     )
 
-    @project = Project.create!(
-      name: "Litfit",
-      material: "Lamp",
-      challenge_id: @furniture_challenge.id
+    @contestant_project = ContestantProject.create!(
+      contestant_id: @contestant1.id,
+      project_id: @project.id
     )
   end
 
@@ -43,5 +49,11 @@ RSpec.describe 'As a visitor', type: :feature do
 
     expect(page).to have_content(@contestant1.name)
     expect(page).to have_content(@contestant2.name)
+  end
+
+  it 'can see projects for each contestant' do
+    visit '/contestants'
+
+    expect(page).to have_content("Projects: #{@project.name}")
   end
 end
