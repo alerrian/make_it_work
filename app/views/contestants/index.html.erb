@@ -1,8 +1,10 @@
 <h2>Contestants Index</h2>
 
 <% @contestants.each do |contestant| %>
-    <%= contestant.name %>
-    <% contestant.projects.each do |project| %>
-        <p>Projects: <%= project.name %>
-    <% end %>
+    <section id="contestant-<%= contestant.id %>">
+        <%= contestant.name %>
+        <% contestant.projects.each do |project| %>
+            <p>Projects: <%= project.name %>
+        <% end %>
+    </section>
 <% end %>
