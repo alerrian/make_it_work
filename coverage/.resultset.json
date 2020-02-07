@@ -368,8 +368,23 @@
           1,
           null
         ]
+      },
+      "/Users/alerrian/Turing/2module/evals/friday_challenges/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/alerrian/Turing/2module/evals/friday_challenges/make_it_work/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1581093480
+    "timestamp": 1581093862
   }
 }
