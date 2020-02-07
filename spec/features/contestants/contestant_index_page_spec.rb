@@ -18,12 +18,6 @@ RSpec.describe 'As a visitor', type: :feature do
       project_budget: 1000
     )
 
-    @project = Project.create!(
-      name: "Litfit",
-      material: "Lamp",
-      challenge_id: @furniture_challenge.id,
-      contestant_id: @contestant1.id
-    )
     @contestant1 = Contestant.create!(
       name: 'Steve',
       age: 32,
@@ -35,6 +29,12 @@ RSpec.describe 'As a visitor', type: :feature do
       age: 30,
       hometown: 'Colorado Springs',
       years_of_experience: 10
+    )
+
+    @project = Project.create!(
+      name: "Litfit",
+      material: "Lamp",
+      challenge_id: @furniture_challenge.id
     )
   end
 
